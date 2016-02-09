@@ -1,0 +1,35 @@
+table.problem {
+    width         :"100%";
+    border-width  : 1px;
+    border-style  : solid;
+    border-color  : #CDCDDD;
+    color :navy;
+}
+
+td.problem_caption {
+    font-style: italic;
+    text-align:right;
+    color :navy;
+}
+
+table.problem-example {
+    width         :100%;
+}
+
+table.problem-constrains {
+    width :100%;
+    font-size : 80%;
+}
+table.problem-constrains TR TD {
+    background-color: #EFEFFF;
+    text-align:right;
+}
+p.problem-section {
+    font-style : normal;
+    font-weight: normal;
+}
+
+tr.problem-example-caption {
+    text-align: center;
+}
+

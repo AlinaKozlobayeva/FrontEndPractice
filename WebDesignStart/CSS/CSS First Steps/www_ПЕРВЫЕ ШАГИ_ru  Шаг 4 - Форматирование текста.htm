@@ -1,0 +1,129 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://firststeps.ru/html/css/r.php?4 -->
+<HTML><HEAD><TITLE>www.ПЕРВЫЕ ШАГИ.ru :: Шаг 4 - Форматирование текста</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="www_ПЕРВЫЕ ШАГИ_ru  Шаг 4 - Форматирование текста_files/2.css" 
+type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=red link=blue bgColor=white>
+<H2>Шаг 4 - Форматирование текста</H2>
+<DIV style="MARGIN: 10px">
+<P>Это набор атрибутов, связанный с выравниванием, отступом, расстоянием между 
+словами, символами и т.д. В общем, меню <I>Формат-Абзац</I> MS Word. Ну что, 
+начнем по порядку. 
+<H3>Text-Align</H3>
+<P>Определяет выравнивание текста. Существует четыре типа - по левому краю 
+(left), по правому (right), по центру (center) и заполнение (justify). 
+<B>Justify</B> означает, что текст будет равномерно заполняет доступное 
+пространство по ширине. Было время, когда эту опцию не поддерживали некоторые 
+браузеры, но современные их версии на счет этого типа выравнивания никаких 
+претензий не высказывают. <PRE>body {text-align: justify }
+p {text-align:left }
+</PRE>
+<H3>Text-Indent</H3>
+<P>Позволяет менять отступ первой строки элементов типа <B>&lt;p&gt;, 
+&lt;div&gt;</B>. Может задаваться как в числовом выражении, так и в процентах. В 
+данном случае проценты высчитываются от ширины элемента, содержащего данный. <PRE>span {text-align: right; text-indent:10ex};
+</PRE>
+<P><SPAN style="TEXT-INDENT: 10ex; TEXT-ALIGN: right">Calculation is done with 
+`BIGINT' or `DOUBLE' (both are normally 64 bits long). It depends on the 
+function which precision one gets. The general rule is that bit functions are 
+done with `BIGINT' precision, `IF', and `ELT()' with `BIGINT' or `DOUBLE' 
+precision and the rest with `DOUBLE' precision. One should try to avoid using 
+unsigned long long values if they resolve to be bigger than 63 bits 
+(9223372036854775807) for anything else than bit fields. MySQL Server 4.0 has 
+better `BIGINT' handling than 3.23. </SPAN>
+<H3>Line-Height</H3>
+<P>Определяет расстояние между базовыми строками текста. При использовании числа 
+(не <I>ex</I> и <I>px</I>, а обычных чисел) расстояние вычисляется как 
+произведение высоты шрифта на данное значение. При использовании процентных мер 
+высота строки берется как приведенный процент от исходной строки. <PRE>p {line-height:2; font-style:italic; margin-left:20%; text-indent: 20px}
+</PRE>
+<P 
+style="MARGIN-LEFT: 20%; TEXT-INDENT: 20px; LINE-HEIGHT: 2; FONT-STYLE: italic">`mysqld_safe' 
+redirects all messages from `mysqld' to the `mysqld' log. One problem with this 
+is that if you execute `mysqladmin refresh' to close and reopen the log, 
+`stdout' and `stderr' are still redirected to the old log. If you use `--log' 
+extensively, you should edit `mysqld_safe' to log to `'hostname'.err' instead of 
+`'hostname'.log' so you can easily reclaim the space for the old log by deleting 
+the old one and executing `mysqladmin refresh'. 
+<H3>Vertical-Align</H3>
+<P>Контролирует вертикальное линейных (inline) элементов, таких как 
+<I>&lt;em&gt;</I>, <I>&lt;b&gt;</I>. Линейным элемент считается тогда, когда до 
+и после него не добавляется никаких знаков переноса строки, то есть не создается 
+новый абзац, в противоположность блочным элементам, для которых новый абзац 
+создается. Так вот. Линейные элемент по умолчанию выравнивается по базовой 
+строке внешнего (то бишь содержащего данный) элемента. Ну почему бы это не 
+изменить? А? Сказано - сделано. <BR>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: top">vertical-align:top</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: bottom">vertical-align:bottom</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: middle">vertical-align:middle</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: sub">vertical-align:sub</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: super">vertical-align:super</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: text-top">vertical-align:text-top</DIV>
+<DIV style="FONT-WEIGHT: bold; FONT-SIZE: large"><BIG>Внешний Текст</BIG> <SPAN 
+style="FONT-SIZE: x-small; VERTICAL-ALIGN: text-bottom">vertical-align:text-bottom</DIV>
+<P>По умолчанию <I>vertical-align</I> имеет значение <I>baseline</I>. Другие 
+значения означают соответственно: 
+<UL>
+  <LI><B>top</B> - выравнивает верх элемента по самому высокому элементу 
+  родителя 
+  <LI><B>bottom</B> - выравнивает низы элементов 
+  <LI><B>middle</B> - середины 
+  <LI><B>sub</B> - элемент выводится, как нижний индекс (субскрипт) 
+  <LI><B>super</B> - элемент выводится как верхний индекс (суперскрипт) 
+  <LI><B>text-top</B> - сравнивает верхнюю границу элемента с верхней линией 
+  шрифта родителя 
+  <LI><B>text-bottom</B> - то же самое для нижней линии </LI></UL>
+<P>Кроме вышеперечисленных, этот атрибут CSS может принимать также и процентное 
+значение. В этом случае элемент поднимается (или опускается, если значение 
+отрицательно, например -20%) над своей базовой линией. Процент берется от высоты 
+линии (line-height элемента). 
+<H3>Word-Spacing, Letter-Spacing</H3>
+<P>Оба этих атрибута обозначает ровно то, что и должны - расстояние между 
+отдельными словами и буквами. Могут принимать значение normal (то есть без 
+изменений) и любое числовое или процентное значение. Выглядит все это так: 
+<P style="WORD-SPACING: 2em; COLOR: green; LETTER-SPACING: 0.5ex">p 
+{color:green; word-spacing:2em; letter-spacing:0.5ex}</P>
+<P>Ну или чуть менее страшно, все зависит от усердия. 
+<H3>Text-Decoration</H3>
+<P>Выделение (еще можно сказать украшение, но слишком уж корявая калька 
+получается) текста. Под выделением здесь понимается - подчеркивание, 
+надчеркивание, перечеркивание, мигание или отсутствие оных. Выглядит оно так: 
+<UL><FONT color=green>
+  <LI style="TEXT-DECORATION: overline">li {text-decoration:overline} 
+  <LI style="TEXT-DECORATION: underline">li {text-decoration:underline} 
+  <LI style="TEXT-DECORATION: line-through">li {text-decoration:lin-through} 
+  <LI style="TEXT-DECORATION: blink">li {text-decoration:blink} 
+  <LI style="TEXT-DECORATION: none">li {text-decoration:none} </FONT></LI></UL>
+<P>Мигать на IE текст отказывается, во всяком случае на версии 6.0. На Опере же 
+мигает исправно, раз в секунду. В любом случае я не думаю, что использование 
+такого выделения является большой дизайнерской находкой, а отсутствие - потерей. 
+
+<H3>Text-Transformation</H3>
+<P>Текст можно преобразовывать - приводить все его буквы к заглавному виду, или 
+все к строчному, или делать прописной первую букву каждого слово. Отбросив как 
+всегда неуместный вопрос "зачем?", делаем: 
+<UL>
+  <LI style="TEXT-TRANSFORM: capitalize">capitalize 
+  <LI style="TEXT-TRANSFORM: uppercase">uppercase 
+  <LI style="TEXT-TRANSFORM: lowercase">lowercase 
+  <LI style="TEXT-TRANSFORM: none">none </LI></UL></DIV>
+<CENTER>
+<HR>
+<A href="http://firststeps.ru/html/css/r.php?3">Предыдущий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/r.php?5">Следующий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/css1.html">Оглавление</A><BR>Автор <A 
+href="mailto:seavan@yandex.ru?SUBJECT=From_part_css#4'_on_[www.firststeps.ru]">Аванесов 
+Самвел</A>.
+<HR>
+<IFRAME marginWidth=0 marginHeight=0 
+src="www_ПЕРВЫЕ ШАГИ_ru  Шаг 4 - Форматирование текста_files/erle.htm" 
+frameBorder=0 width=468 scrolling=no 
+height=60><a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=9595&bt=1&pz=0&rnd=15329" target=_blank><img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=9595&bt=1&pz=0&rnd=15329" alt="-AdRiver-" border=0 width=468 height=60></a></IFRAME></CENTER><BR><BR></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></SPAN></BODY></HTML>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Game of thrones Welcome Page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="script/shop.js"></script>
+</head>
+<body>
+
+<header>
+    <ul class="nav">
+        <li><a href="MainPage.html">Home</a></li>
+        <li>
+            <a href="Category.html">Categories</a>
+        </li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="buttons.html">Push the button</a></li>
+        <li><a href="calc.html">Calc</a></li>
+        <li><a href="shop.html">Shop</a></li>
+    </ul>
+</header>
+
+
+<form>
+    <div class="shopBody">
+        <table id="shopTable" class="shopBody" border="2" cellpadding="1" cellspacing="2" align="center" width="100%">
+            <tr bgcolor="#f0ffff">
+                <th>Product id</th>
+                <th>Product name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Add to Cart</th>
+            </tr>
+            <tr bgcolor="#fff8dc" id="product_001">
+                <td>001</td>
+                <td><img
+                        src="https://srv02.cdn-asknet.com/cache/200/200/1409045564/user_upload/product-images/140047/140047_1.jpg"><br>Game
+                    of Thrones Distressed<br> Lannister Sigil T-Shirt
+                </td>
+                <td>£17.99</td>
+                <td><input type="number" value="0" min="0" max="10" maxlength="4"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr bgcolor="fff8dc" id="product_002">
+                <td>002</td>
+                <td><img
+                        src="https://srv02.cdn-asknet.com/cache/200/200/1442505141/user_upload/product-images/570028/570028_1.jpg"><br>Game
+                    of Thrones Sword <br> in the Darkness T-shirt
+                </td>
+                <td>£17.99</td>
+                <td><input type="number" value="0" min="0" max="10" maxlength="4"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr bgcolor="fff8dc" id="product_003">
+                <td>003</td>
+                <td><img
+                        src="https://srv02.cdn-asknet.com/cache/200/200/1409045565/user_upload/product-images/140049/140049_1.jpg"><br>Game
+                    of Thrones Distressed <br> Stark Sigil Women's T-Shirt
+                </td>
+                <td>£11.99</td>
+                <td><input type="number" value="0" min="0" max="10" maxlength="4"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+            <tr bgcolor="fff8dc" id="product_004" name="ololo">
+                <td>004</td>
+                <td><img
+                        src="https://srv02.cdn-asknet.com/cache/200/200/1442505147/user_upload/product-images/570029/570029_1.jpg"><br>Game
+                    of Thrones Khal T-shirt
+                </td>
+                <td>£17.99</td>
+                <td><input type="number" value="0" min="0" max="10" maxlength="4"></td>
+                <td><input type="checkbox"></td>
+            </tr>
+
+        </table>
+        <input type="button" value="Up" onclick="countDown()">
+        <input type="button" value="Down" onclick="countUp()">
+        <input type="button" value="Add" onclick="add()">
+        <input type="button" value="Send" onclick="send()">
+    </div>
+</form>
+
+<footer>
+    <div class="signature">
+        <p>Posted by: Alina Kozlobayeva</p>
+
+        <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+
+        <p>All rights received © .</p>
+    </div>
+</footer>
+</div>
+
+</body>
+</html>

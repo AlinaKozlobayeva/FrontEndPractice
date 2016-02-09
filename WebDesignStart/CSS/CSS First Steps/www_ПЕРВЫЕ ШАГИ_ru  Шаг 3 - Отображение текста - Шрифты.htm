@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://firststeps.ru/html/css/r.php?3 -->
+<HTML><HEAD><TITLE>www.ПЕРВЫЕ ШАГИ.ru :: Шаг 3 - Отображение текста - Шрифты</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="www_ПЕРВЫЕ ШАГИ_ru  Шаг 3 - Отображение текста - Шрифты_files/2.css" 
+type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=red link=blue bgColor=white>
+<H2>Шаг 3 - Отображение текста - Шрифты</H2>
+<DIV style="MARGIN: 10px">
+<P>Одни из наиболее часто используемых свойств CSS - атрибуты, свзязанные с 
+начертанием текста. Это собственно гарнитура шрифта (имя), начертание 
+(нормальное или курсивное), жирность (вес), размер и приведение. Особенно ничего 
+нового тут нет, поэтому перейдем к рассмотрению свойств. 
+<H3>Font-family</H3>
+<P>Гарнитура шрифта. Включает себя наименование шрифта или его стиль (семью), 
+или и то, и другое вместе. Записывается этот атрибут так: <PRE>body { font-family: "Arial Narrow", Arial, sans-serif}
+p { font-family: "Times New Roman", serif}
+pre {font-family: Courier}
+</PRE>
+<P>Здесь "Arial Narrow" - полное наименование шрифта, Arial - укороченный 
+вариант (альтернативный вариант шрифта), sans-serif - его основной стиль. 
+Количество вариантов записи связано в первую очередь с тем, что конкретно этого 
+(указанного в наименовании) шрифта у пользователя может и не быть, в таком 
+случае используется альтернативный вариант, или шрифт, указанный в настройках 
+браузера для данного стиля шрифта. В общем случае: 
+<UL>
+  <LI><B>serif</B> - шрифт типа Times New Roman, пропорциональный, с засечками. 
+  <LI><B>sans-serif</B> - шрифт типа Arial, попрорциональный, рубленый. 
+  <LI><B>cursive</B> - тип Calligraph, имитирующий рукпописный текст, наклонный. 
+
+  <LI><B>monospace</B> - моноширинный шрифт, как Courier New, например. 
+  <LI><B>fantasy</B> - шрифт наподобие Comic Sans. </LI></UL>
+<P>Сейчас даже на системах Linux чаще всего стоят шрифты, аналогичные шрифтам 
+Windows (и чаще всего с такими же именами). Но все равно, всегда 
+предпочтительней указывать дополнительно <I>generic-family</I> шрифта. 
+<H3>Font-Style</H3>
+<P>Начертание шрифта. Вообще говоря, бывает трех типов - <I>normal, italic, 
+oblique</I>. Но разницу между <I>italic</I> и <I>oblique</I> я так и не увидел. 
+Первый (normal) дает нам прямой текст, а два остальных - наклонный (курсивный). 
+Записывается это дело так: <PRE>p { font-family: "Times New Roman", serif; font-style:italic}
+pre {font-style: normal}
+</PRE>
+<H3>Font-Variant</H3>
+<P>На мой взгляд, довольно ненужный атрибут, обозначающий приведение текста по 
+высоте - обычный (прописные и строчные буквы) или smallcaps (строчные буквы как 
+малые прописные). Записывается так: <PRE>span {font-variant: smallcaps}
+span {font-variant: normal}
+</PRE>
+<P>... а выглядит так: 
+<P><SPAN style="FONT-VARIANT: normal">... Председатель призвал зал к тишине. "А 
+теперь... Выступит заведующий Транспортным отделом"</SPAN><BR><SPAN 
+style="FONT-VARIANT: small-caps">... Председатель призвал зал к тишине. "А 
+теперь... Выступит заведующий Транспортным отделом"</SPAN> 
+<H3>Font-Weight</H3>
+<P>Вес (жирность) шрифта. Вообще говоря, может принимать числовые значения от 
+100 до 800, или же именованные: <I>normal, bold, bolder, lighter</I>. Однако 
+значения, отличные от <I>bold</I> и <I>normal</I>, как правило, внешним видом 
+друг от друга не отличаются (во всяком случае, на экране монитора в окне 
+браузера). Возможно, при использовании CSS для форматирования печатных 
+документов результат будет виден хотя бы на печати. В любом случае лучше 
+индивидуально все это проверять для данного браузера и конкретной программы 
+вывода на печать. Выглядят же различные градации жирности так: 
+<P>
+<LI style="FONT-WEIGHT: 100">100 
+<LI style="FONT-WEIGHT: 200">sample text - 200 
+<LI style="FONT-WEIGHT: 300">sample text - 300 
+<LI style="FONT-WEIGHT: 400">sample text - 400 
+<LI style="FONT-WEIGHT: 500">sample text - 500 
+<LI style="FONT-WEIGHT: 600">sample text - 600 
+<LI style="FONT-WEIGHT: 700">sample text - 700 
+<LI style="FONT-WEIGHT: 800">sample text - 800 
+<LI style="FONT-WEIGHT: bold">sample text - bold 
+<LI style="FONT-WEIGHT: bolder">sample text - bolder 
+<LI style="FONT-WEIGHT: lighter">sample text - lighter 
+<LI style="FONT-WEIGHT: normal">sample text - normal 
+<H3>Font-Size</H3>
+<P>Размер шрифта. Может указываться аж в четырех вариантах - собственно пунктов 
+высоты, процентов относительно высоты элемента HTML по умолчанию, 
+уменьшения-увеличения размера относительно этого же дефолтного размера и 
+именованного размера. И опять, использование именованного размера является 
+скорее всего наиболее предпочтительным из всех этих вариантов. И по той же 
+причине - проблемам совместимости. На самом деле, у пользователя может стоять 
+разрешение 1600 на 1200, при этом шрифт размера 9, выглядящий у Вас (на экране 
+17" с разрешением 1024x768) очень даже крупно, будет у этого разнесчастного 
+обладателя мощного монитора выглядеть, мягко говоря, мелко. Таким образом имеем 
+обозначения: 
+<UL>
+  <LI><B style="FONT-SIZE: xx-small">xx-small ,</B><B 
+  style="FONT-SIZE: x-small">x-small ,</B><B style="FONT-SIZE: small">small 
+  ,</B><B style="FONT-SIZE: medium">medium ,</B><B 
+  style="FONT-SIZE: large">large ,</B><B style="FONT-SIZE: x-large">x-large 
+  ,</B><B style="FONT-SIZE: xx-large">xx-large </B></LI></UL><PRE>b { font-size:xx-large }
+</PRE>
+<P>Нотация сильно смахивает на набор одежды для всех весовых категорий, от 
+сверхлайтов до супертяжей, ну да и пусть. Правда, по точности размеров на разных 
+браузерах ситуация сравнима с замечательными размерами изделий китайских 
+рукотворных швейных мастерских. Может подойти любой - от S до XXL. Ну, я 
+отвлекся. Так вот. Другие варианты <PRE>h2 {font-size: 150%} /* заголовок в полтора раза выше стандартного размера */
+div {font-size: smaller} /* раздел чуть меньше */
+div {font-size: larger} /* раздел чуть больше */
+li {font-size:12px} /* элемент списка ровно в 12 пикселей */
+p {font-size:5ex} /* параграф размером ровно 5 ёкселей ;) */
+</PRE>
+<P>Пару слов о "ёкселях". Это такой размер, где каждый юнит - высота буквы 'x'. 
+Подробнее о размерах будет рассказано позднее, будут приведены все возможные 
+примеры разнообразных размеров. А пока - как выглядит параграф высотой в пять 
+этих самых exелей. 
+<P style="FONT-SIZE: 5ex">Просто параграф... 
+<P>Как видно, один ёксель - не так уж и мало. По сравнению с пикселем. 
+<P>Настало время нашим изысканиям подвести итог. Рассмотрим последний атрибут и 
+- спать. 
+<H3>Font</H3>
+<P>Самый что ни на есть общий шрифтовый атрибут. В него (как и в почти все 
+другие классифицируемые свойства CSS) разработчики ухитрились впихнуть все 
+вышерассмотренное. Выглядят же эти сельди в бочке так: <PRE>/* font: [ font-style | font-variant | font-weight | font-size font-family] */
+
+span {font: italic small-caps bold x-small "Arial Narrow" arial sans-serif}
+i b {font: normal; font-style:normal}
+div {font: oblique normal bold}
+</PRE>
+<P><SPAN 
+style="FONT: bold italic small-caps x-small 'Arial Narrow' Arial sans-serif">Первый 
+пример: font: italic small-caps bold x-small "Arial Narrow" Arial 
+sans-serif</SPAN> 
+<STYLE>I B.my {
+	FONT-WEIGHT: normal; FONT-STYLE: normal
+}
+</STYLE>
+<BR><I><B class=my>Второй пример</B></I> 
+<P>Любое из свойств в данном случае указывать необязательно. Главное - соблюдать 
+порядок. В случае неоднозначности (например normal для наклона и normal для 
+веса) лучше использовать отдельные описание. Надежнее так. Надежнее, чем с двумя 
+китайскими парашютами прыгать. </P></LI></DIV>
+<CENTER>
+<HR>
+<A href="http://firststeps.ru/html/css/r.php?2">Предыдущий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/r.php?4">Следующий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/css1.html">Оглавление</A><BR>Автор <A 
+href="mailto:seavan@yandex.ru?SUBJECT=From_part_css#3'_on_[www.firststeps.ru]">Аванесов 
+Самвел</A>.
+<HR>
+<IFRAME marginWidth=0 marginHeight=0 
+src="www_ПЕРВЫЕ ШАГИ_ru  Шаг 3 - Отображение текста - Шрифты_files/index.htm" 
+frameBorder=0 width=468 scrolling=no 
+height=60><a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=9595&bt=1&pz=0&rnd=25667" target=_blank><img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=9595&bt=1&pz=0&rnd=25667" alt="-AdRiver-" border=0 width=468 height=60></a></IFRAME></CENTER><BR><BR></BODY></HTML>

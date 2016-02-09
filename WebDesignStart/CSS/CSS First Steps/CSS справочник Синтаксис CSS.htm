@@ -1,0 +1,226 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0030)http://css.manual.ru/synt.html -->
+<HTML><HEAD><TITLE>CSS справочник: Синтаксис CSS</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="CSS справочник Синтаксис CSS_files/main.php" type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY><!-- TOP LINE... -->
+<DIV class=topline><A href="http://css.manual.ru/"><IMG height=58 
+alt=css.manual.ru src="CSS справочник Синтаксис CSS_files/logo.gif" width=724 
+border=0></A> </DIV><!-- ...TOP LINE --><!-- MAIN MENU... -->
+<DIV class=leftsb><SPAN class=menu><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/index.html">Введение</A><BR><IMG height=15 alt=&nbsp; 
+hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/synt.html">Синтаксис CSS</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/inc.html">Включение стилей 
+в&nbsp;документ</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/val.html">Значения свойств</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/font.html">Свойства шрифта</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/text.html">Свойства текста</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/color.html">Свойства цвета и&nbsp;фона</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/border.html">Свойства 
+обрамления</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/pos.html">Свойства позиционирования</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/visual.html">Визуальные 
+свойства</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/lists.html">Свойства списков</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/scroll.html">Свойства полос прокрутки</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/span.html">Тег SPAN</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><SPAN class=menuitem>Статьи</SPAN><BR><IMG height=15 
+alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/cssideol.html">Идеология CSS</A><BR><IMG 
+height=15 alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/usecss.html">Как использовать 
+CSS</A><BR><IMG height=15 alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/cssmenu.html">Меню с&nbsp;помощью 
+CSS</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Синтаксис CSS_files/b1.gif" width=12><A 
+href="http://css.manual.ru/alphabet.html">Алфавитный указатель</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/forum/index.php">Форум</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/apply.html">Обратная связь</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 src="CSS справочник Синтаксис CSS_files/b1.gif" 
+width=12><A href="http://css.manual.ru/links.html">Ссылки</A><BR></SPAN></DIV><!-- ...MAIN MENU -->
+<DIV class=maincontent>
+<H3>Основы синтаксиса</H3>
+<P>В общем виде правило, задающее стиль выглядит вот так: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>selector </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>property1</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> value1</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> property2</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> value2</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> property3</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value>
+value3</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> property4</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> value4</SPAN><SPAN class=bracket>;</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Например, мы можем задать цвет содержимому тега <SPAN 
+class=tag>&lt;b&gt;</SPAN> таким способом: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>b </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> red</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Здесь <SPAN class=selector>b</SPAN> это селектор, <SPAN 
+class=property>color</SPAN> - это свойство, <SPAN class=value>red</SPAN>, как вы 
+уже наверное догадались, значение. </P>
+<H3>Группировка селекторов</H3><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>h1 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-face</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> Arial</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>h3 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-face</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> Arial</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>h3 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-face</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> Arial</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Делает то же самое, что и: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>h1, h3, h3 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-face</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> Arial</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Ясно, что второй вариант предпочтительнее, так как его удобнее изменить, он 
+занимает меньше места, а следовательно быстрее передастся по сети и т.д. </P>
+<H3>Контекстные селекторы</H3>
+<P>Стандарт CSS разрешает применять некоторое стилевое правило, только тем 
+тегам, которые находятся внутри других. Поясню на примере: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>ol li </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>list-style</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> upper-roman</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>ol ol li </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>list-style</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> upper-alpha</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>ol ol ol li </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>list-style</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> decimail</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>ol ol ol ol li </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>list-style</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> lower-alpha</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Согласно этим стилевым правилам, броузер, встретив тег <SPAN 
+class=tag>&lt;li&gt;</SPAN>, вложенный в один тег <SPAN 
+class=tag>&lt;ol&gt;</SPAN>, должен применить значение <SPAN 
+class=value>upper-roman</SPAN> для свойства <SPAN 
+class=property>list-style</SPAN> к этому тегу. Встретив тег <SPAN 
+class=tag>&lt;li&gt;</SPAN>, вложенный в два тега <SPAN 
+class=tag>&lt;ol&gt;</SPAN>, он должен использовать значение <SPAN 
+class=value>upper-alpha</SPAN> для свойства <SPAN 
+class=property>list-style</SPAN> к этому тегу и т.д. </P>
+<P>Также можно группировать контекстные селекторы </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>B I, LI OL</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>cloror</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> blue</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Это правило означает, что текст, выделенный тегом <SPAN 
+class=tag>&lt;B&gt;</SPAN>, находящимся в <SPAN class=tag>&lt;I&gt;</SPAN>, и 
+текст, находящийся в теге <SPAN class=tag>&lt;LI&gt;</SPAN>, вложенном в один 
+тег <SPAN class=tag>&lt;OL&gt;</SPAN>, будет выделен голубым цветом. </P>
+<H3>Дочерние, сестринские и универсальные селекторы</H3>
+<P>Рассмотрим следующие примеры: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>* </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>h1 &gt; h3 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>h1 + h3 </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>В первом примере звездочка,универсальный селектор, означает, что стилевой 
+правило должно быть применено ко всем элементам документа, так что весь текст в 
+нем будет выделен жирным шрифтом </P>
+<P>Во втором примере стилевое правило будет применяться ко всем тегам <SPAN 
+class=tag>&lt;h3&gt;</SPAN>, являющимся дочерними по отношению к тегу <SPAN 
+class=tag>&lt;h1&gt;</SPAN>, и ко всем <SPAN class=tag>&lt;h3&gt;</SPAN> тегам, 
+являющимся родительскими по отношению к <SPAN class=tag>&lt;h1&gt;</SPAN>. </P>
+<P>Третий пример иллюстрирует тип смежного селектора, данное стилевое правило 
+будет применено к тегу, следующему непосредственно за другим. В этом случае 
+всякий раз, когда за заголовком первого уровня следует заголовок второго уровня, 
+заголовок второго уровня станет жирным. </P>
+<H3>Псевдоэлементы</H3>
+<P>Псевдоэлементы пока не поддерживаются ни одним из популярных браузеров, так 
+что вы смело можете пропустить этот раздел. </P>
+<P>Синтаксис псевдоэлемнтов таков: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>selector<SPAN class=bracket>:</SPAN>pseudoelement </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>property1</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value>value1</SPAN><SPAN class=bracket>;</SPAN>...<SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Псевдоэлементы <SPAN class=selector>first-line</SPAN> и <SPAN 
+class=selector>first-letter</SPAN> определяют стиль первой строки и первой 
+буквы. Например так вы можете создать буквицу </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>p<SPAN class=bracket>:</SPAN>first-letter </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> red</SPAN><SPAN class=bracket>;</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>Псевдоэлементы <SPAN class=selector>before</SPAN> и <SPAN 
+class=selector>after</SPAN> позволяют указывать в документе места, куда 
+вставлять автоматически генерируемое содержимое. Например определив стиль 
+упорядоченного списка следующем образом: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>ol<SPAN class=bracket>:</SPAN>before</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>content</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value>'Ссылки'</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>вы увидите перед каждым списком слово ссылки. </P>
+<H3>Регулярные классы</H3>
+<P>Иногда нужно использовать один стиль абзацев для примеров исходных кодов 
+программ, а другой для описания алгоритмов. Если ни один из абзацев не будет 
+иметь явного контекста, по которому его можно будет отличить от другого, то 
+можно определить стиль для каждого в отдельности: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>p.code </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property> font-family</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> symbol</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> margin-left</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> 30px</SPAN><SPAN class=bracket>;</SPAN> <SPAN class=bracket>}</SPAN>
+<SPAN class=selector>p.alg </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property> margin-left</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value>2px</SPAN><SPAN class=bracket>;</SPAN> <SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>
+<P>В селекторе, после имени тега через точку приписано имя класса. Первое 
+правило создало класс стилей абзацев <SPAN class=selector>code</SPAN>, текст 
+которых должен выводиться шрифтом symbol c с отступом 30 пикселей от края, а 
+второе <SPAN class=selector>alg</SPAN>, текст которых будет отодвинут от левого 
+края на 2 пикселя. Чтобы применить к содержимому тега определенный класс надо 
+вставит в тег атрибут class и присвоить ему имя стилевого класса. 
+<P><PRE class=code><SPAN class=htmlcontent>
+<SPAN class=tag>&lt;p class<SPAN class=bracket>=</SPAN>"alg"&gt;</SPAN><SPAN class=tag>&lt;br&gt;</SPAN>
+Алгоритм сортировки пузырьком. По
+исходному коду догадайтесь сами, как он
+работает и убедитесь в его верности
+<SPAN class=tag>&lt;/p&gt;</SPAN>
+<SPAN class=tag>&lt;pre&gt;</SPAN>
+<SPAN class=tag>&lt;p class<SPAN class=bracket>=</SPAN>"code"&gt;</SPAN>
+for i :<SPAN class=bracket>=</SPAN> 1 to n do begin
+   for k :<SPAN class=bracket>=</SPAN> i downto 2 do begin
+      if Obj[k-1] &gt; Obj<SPAN class=k> then begin
+         tmp :<SPAN class=bracket>=</SPAN> Obj[k-1];
+         Obj[k-1] :<SPAN class=bracket>=</SPAN> Obj<SPAN class=k>;
+         Obj<SPAN class=k> :<SPAN class=bracket>=</SPAN> tmp;
+      end;
+   end;
+end;
+<SPAN class=tag>&lt;/p&gt;</SPAN>
+<SPAN class=tag>&lt;/pre&gt;</SPAN>
+ </SPAN>
+</PRE><H3>Родовые классы</H3><P>В рамках стандарта CSS можно создавать класс, не ассоциируя их с каким-нибудь тегом. Например, задав стилевое правило следующем образом: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>.bold_and_italic </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-style</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> italic</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>;</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><P>и присвоив <SPAN class=selector>bold_and_italic</SPAN> свойству class некоторого тега, вы укажете броузеру, что содержимое этого тега надо отображать жирным и наклонным шрифтом. </P><A name=pseudoclass></A><H3>Псевдоклассы</H3><P>Кроме традиционных классов, стандарт CSS определяет еще и <B>псевдоклассы</B>. П севдоклассы позволяют управлять отображением элементов, находящихся в каком-нибудь состоянии. Псевдоклассы присоединяются к имени тега двоеточием, и их имена заранее определены. Пока существует всего семь псевдоклассов: </P><UL><LI><B>link, alink, visited</B> - эти псевдоклассы используются только с тегом <SPAN class=tag>&lt;a&gt;</SPAN> и определяют стиль отображения обычной, активной и посещенной ссылок соответственно. Пример: <PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>a<SPAN class=bracket>:</SPAN>link</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> blue</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>a<SPAN class=bracket>:</SPAN>active</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> green</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> font-weight</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> bold</SPAN><SPAN class=bracket>;</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>a<SPAN class=bracket>:</SPAN>visited</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> red</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><LI><B>hover, focus</B> - это, так называемые, интерактивные классы. Класс hover определяет, как отображать объект, когда на него попал курсор мышь, а класс focus, определяет, как броузеру показать содержимое тега, ставшего объектом внимания. С помощью этих классов можно украсить ссылки на странице: <PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>a<SPAN class=bracket>:</SPAN>hover</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> yellow</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>Класс focus не поддерживается современными броузерами, а класс active работает только с тегом <SPAN class=tag>&lt;a&gt;</SPAN> <LI><B>first-child</B> - этот класс показывает, как отображать содержимое тега, являющегося первым потомком раздела. Этот класс не поддерживается ни одним из популярных браузеров, поэтому не будем на нем останавливаться <LI><B>lang - </B>этот псевдокласс указывает, как отображать содержимое на некотором языке. Например вы можете установить следующее стилевое правило: <PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>p<SPAN class=bracket>:</SPAN>lang(en)</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>font-family</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> roman</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>Тогда абзацы с "английским" содержимым будет отображаться шрифтом, семейства Roman. <PRE class=code><SPAN class=htmlcontent>
+  <SPAN class=tag>&lt;div lang<SPAN class=bracket>=</SPAN>"en"&gt;</SPAN>
+  <SPAN class=tag>&lt;h1&gt;</SPAN><SPAN class=tag>&lt;/h1&gt;</SPAN>Some title<SPAN class=tag>&lt;/h1&gt;</SPAN>
+  <SPAN class=tag>&lt;p&gt;</SPAN>Some text<SPAN class=tag>&lt;/p&gt;</SPAN>
+  <SPAN class=tag>&lt;/div&gt;</SPAN>
+   </SPAN>
+</PRE>Ни один из популярных броузеров не поддерживает этот класс </LI></UL><H3>ID-классы</H3><P>Почти все теги допускают атрибут id, с помощью CSS можно сопоставить тегу с данным значением id некоторое стилевое правило. Имя ID-класса отделяется от имени тега знаком # (решетка). </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>#yellow </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> yellow</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>h1#blue </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> blue</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><P>Теперь можно создать синий заголовок, написав <SPAN class=tag>&lt;h1 id="blue"&gt;</SPAN> или, присвоив атрибуту id любого тега значение yellow, окрасить его содержимое в желтый цвет. Употребление стилей, созданных таким способом обладает существенным недостатком - значение id уникально и документе. </P><H3>Стили для разных устройств вывода</H3><P>W3C предполагает, что в недалеком будущем HTML документы будут отображаться не только на мониторах компьютеров, но и на таких экзотических устройствах, как принтеры, печатающие по Брайлю(для слепых). Для этого была придумана специальная директива <SPAN class=selector>@media</SPAN>. </P><P>Синтаксис: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>@media список устройств
+</SPAN><SPAN class=bracket>{</SPAN>
+...
+стилевые правила
+...
+<SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>@media tv, projection
+</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>
+<SPAN class=selector>body</SPAN><SPAN class=bracket>{</SPAN>background</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> blue</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><P>В данный момент в стандарт CSS входят следующие устройства: <SPAN class=selector>aural</SPAN> ( синтеаторы речи), <SPAN class=selector>braille</SPAN> (тактильный), <SPAN class=selector>embossed</SPAN> (принтеры, печатающие по Брайлю), <SPAN class=selector>handheld</SPAN> (карманные), <SPAN class=selector>print</SPAN> (обычные принтеры), <SPAN class=selector>projection</SPAN> (проекционные аппараты), <SPAN class=selector>tty</SPAN> (телетайп), <SPAN class=selector>tv</SPAN> (телевизоры) и <SPAN class=selector>all</SPAN> (объединяет все типы). </P><P>Сейчас ни один из популярных броузеров не поддерживает директиву <SPAN class=selector>@media</SPAN>. </P><H3>Комментарии к стилям</H3><P>Как и в других языках программирования, в CSS комментарии только приветствуются. Но не вздумайте вводить их как в HTML, CSS - не HTML. Вы должны оформлять комментарии в своих стилях начиная их с символов /* и заканчивая символами */. Не скупитесь на использование комментариев, они облегчат понимание стилей для вас и людей, которые, может быть, будут модифицировать ваши стили в дальнейшем. </P></DIV><!-- BOTTOM LINE... --><DIV class=bottomline><IMG height=20 alt="" src="CSS справочник Синтаксис CSS_files/-.gif" width=724><BR></TD></TR></DIV><!-- ...BOTTOM LINE --><DIV class=copyright align=right><SMALL>© 2003-2004, <A href="http://klimontovich.ru/">В. Климонтович</A>, Н. Пономарев (<A href="http://css.manual.ru/apply.html">контакт</A>)<BR>При поддержке проекта <A href="http://www.manual.ru/">MANUAL.RU</A> </SMALL></DIV></SPAN></SPAN></SPAN></BODY></HTML>

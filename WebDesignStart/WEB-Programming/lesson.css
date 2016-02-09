@@ -1,0 +1,199 @@
+@import "problem.css";
+
+h3,h4 {
+    MARGIN-TOP: 1em; 
+    FONT-SIZE:14px; 
+    MARGIN-LEFT: 2em; 
+    MARGIN-RIGHT: 2em; 
+    COLOR: #CC6600; 
+    FONT-FAMILY: Helvetica, Arial; 
+    FONT-STYLE:italic;
+}
+h2 { 
+    MARGIN-TOP: 0.5em; 
+    FONT-WEIGHT: bold; 
+    FONT-SIZE: 20px; 
+    MARGIN-LEFT: 2em; 
+    COLOR: #CC6600; 
+    MARGIN-RIGHT: 1.2em; 
+    FONT-FAMILY: Helvetica, Arial;
+}
+
+pre
+{
+  font-family: monospace;
+  font-style : normal;
+  font-weight: normal;
+}
+
+TABLE.epigraph {
+    width       :100%;
+    border-style:dotted;
+    border-width:0px;
+    color       :#000;
+    text-align  :right;
+    font-size   :80%;
+}
+
+
+TABLE.figure {
+    align         : center;
+    border-style  : dotted;
+    border-width  : 0px;
+    padding       : 10px;
+    border-spacing: 0px;
+    border-width  : 0px;
+}
+
+TABLE.plink tr{
+    background-color:#F5F5FF;  
+}
+
+A:link.bottom {
+    color=#000;
+}
+
+A:visited.bottom {
+    color=#000;    
+}
+
+p.bottom {
+    color       = #000;
+    font-family = sans-serif;
+    font-size   = 80%;
+}
+
+/* exercise */
+TABLE.exercise {
+    WIDTH:100%;
+    BORDER:0px solid black;
+    COLOR:#500;
+    FONT-SIZE:100%;
+}
+
+TABLE.exercise caption {
+    FONT-WEIGHT:bold; 
+    TEXT-ALIGN:center;
+}
+
+TABLE.exercise tr th {
+    VERTICAL-ALIGN:top;
+    COLOR:#500;
+}
+
+TABLE.exercise tr td {
+    VERTICAL-ALIGN: top;
+    COLOR:#500;
+}
+
+/* example */
+TABLE.example {
+    WIDTH:100%;
+    BORDER:0px solid black;
+    COLOR:#995533;
+    FONT-SIZE:100%;
+}
+
+TABLE.example caption {
+    FONT-WEIGHT:bold; 
+    FONT-FAMILY:Verdana, Arial, Helvetica;
+    TEXT-ALIGN:center;
+    COLOR:#995533;
+}
+
+TABLE.example tr th {
+    VERTICAL-ALIGN: top;
+    COLOR:#995533;
+}
+
+TABLE.example tr td {
+    VERTICAL-ALIGN: top;
+    COLOR:#995533;
+}
+
+/* solution */
+TABLE.solution {
+    FONT-SIZE:100%;
+    width: 100%;
+    border: 0px solid black;
+    color: #080;
+}
+
+TABLE.solution caption {
+    FONT-WEIGHT:bold; 
+    text-align: left;
+}
+
+TR.solution {
+    color: #080;
+}
+
+
+/* formula (equation) */
+var {
+    font-style : normal;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size  : 100%;
+}
+
+/* in-formula text */
+i {
+    font-style : normal;
+    font-family: serif;
+    font-size  : 120%;
+}
+
+div.formula {
+    margin-left:25px;
+}
+
+/* formula frame */
+table.formula {
+    width:95%;
+    border: 0px solid black;
+    font-style : normal;
+    font-family: sans-serif;
+    font-size  : 105%;
+    font-weight: normal;
+
+}
+
+table.formula td {
+    width:100%;
+    border: 0px solid black;
+}
+span.sym{
+    font-family:Symbol;
+    mso-char-type:symbol;
+}
+
+/* algorithm */
+TABLE.algorithm {
+    WIDTH:100%;
+    FONT-SIZE:100%;
+    BORDER: 0 solid black;
+    COLOR:navy;
+}
+
+TABLE.algorithm caption {
+    FONT-WEIGHT:bold; 
+    FONT-FAMILY:Verdana, Arial, Helvetica;
+    TEXT-ALIGN:center;
+}
+
+TABLE.algorithm TR TD {
+    COLOR:navy;
+}
+
+TABLE.algorithm TR TH {
+    COLOR:navy;
+}
+pre{
+   font-size:12px;
+   font-family: Courier, Arial;
+}
+tt{
+   font-size:120%;
+   font-family: new-courier;
+}

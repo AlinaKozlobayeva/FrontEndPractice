@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://firststeps.ru/html/css/r.php?5 -->
+<HTML><HEAD><TITLE>www.ПЕРВЫЕ ШАГИ.ru :: Шаг 5 - Цвета и фон</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="www_ПЕРВЫЕ ШАГИ_ru  Шаг 5 - Цвета и фон_files/2.css" type=text/css 
+rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=red link=blue bgColor=white>
+<H2>Шаг 5 - Цвета и фон</H2>
+<DIV style="MARGIN: 10px">
+<H3>Color</H3>
+<P>Определяет цвет элемента. Под цветом в данном случае подразумевается цвет 
+текста этого элемента. Если же нужно определить цвет элемента как блока (то есть 
+фон), следует пользоваться свойством Background-Color. <PRE>a { color: yellow }
+p { color: #050505 }
+b { color: #AAA }
+input { color: rgb(245,135,75) }
+textarea { color: rgb(10%,30%,50%) }
+</PRE>
+<P>Как всегда, впечатляет многообразие способов выражения мысли в CSS. Цвет 
+можно задавать напрямую как RGB значение, или же посредством именованной 
+константы. Использовать константы с одной стороны удобно, так как не нужно 
+запоминать неудобоваримые шестнадцатеричные числа, но с другой стороны не очень 
+надежно, поскольку в принципе задание константы на разных системах и браузерах 
+разное. Нет, конечно же, <I>red</I> скорее всего будет везде 0xFF0000, но с 
+другой стороны какой-нибудь <I>darkred</I> или <I>lightgreen</I> уже не столь 
+однозначен. Как видно, имена можно наугад выбирать из английских названий 
+цветов, добавляя к ним еще приставки <I>dark</I> и <I>light</I>, то бишь темный 
+и яркий. Ну а с RGB так вообще просто - числовые или процентные соотношения в 
+свете красной, зеленой и голубой составляющей. На будущее - цвет в CSS везде 
+задается одним из вышеприведенных способов. 
+<H3>Background-Color</H3>
+<P>Помимо обычных цветовых значений свойство background-color может принимать 
+также значение <I>transparent</I> (установленное по умолчанию). В этом случае 
+фон текста элемента цвета собственного не имеет, взамен используется подложка 
+элемента уровнем выше (если он есть). <PRE>a {background-color: darkgreen; color: white }
+body {background-color: #FFFFFF }
+</PRE>
+<H3>Background-Image</H3>
+<P>Задает фоновое изображение для элемента. Выглядит это так: <PRE>body { background-image: url("img/back.png") }
+</PRE>
+<P>Изображение (само собой) начинает грузиться после загрузки всего документа. 
+Поэтому для того, чтобы до этого славного момента страница выглядела бы 
+более-менее культурно, рекомендуется задавать схожий (или хотя бы подходящий по 
+дизайну) цвет фона с помощью <B>background-color</B>. Форматы изображений, 
+поддерживаемый браузерами - GIF, PNG и JPEG отличаются друг от друга методами 
+компрессии и областями применения. В анимации (там, где большая часть нарисована 
+руками или мышью) рекомендуется использовать GIF или PNG - за счет лучшего 
+соотношения сжатие/потеря качества по отношению к JPEG. 
+<P>Вообще говоря, выражение потеря качества к форматам GIF и PNG вообще 
+неприменима - можно сказать, потеря цвета или цветовой палитры, поскольку 
+собственно изображение при сжатии не меняется, преобразуется лишь его цветовая 
+составляющая. Однако для фотографий, детализованных 3D-изображений и всего 
+подобного лучше подходит JPEG, поскольку подмена цветовой палитры в таких 
+изображениях неизбежно приведет к весьма заметной потере качества, а JPEG же 
+использует довольно своебразный алгоритм сжатия, при котором изображение 
+разбивается на цветовой и альфа (черно-белый канал), и проводящей их раздельное 
+преобразование. Не вдаваясь в подробности, можно сказать, что при этом 
+происходит весьма значительное сжатие изображение, приводящее к некоторым 
+искажениям, называемым артефактами. Для фотографий при нежесткой степени 
+компрессии такие артефакты не очень заметны в отличие от, скажем, скриншотов. 
+<H3>Background-Repeat</H3>
+<P>Позволяет установить заполнение (мощение) фоновым изображением. Очень 
+полезное свойство, позволяющее маленьким изображением создать оригинальный фон 
+страницы или элемента. Заполняться можно по вертикали (repeat-y), по горизонтали 
+(repeat-x), в обеих направлениях (repeat) или не заполняться вообще (no-repeat). 
+<PRE>body { background-image: url("img/tile.png"); background-repeat: repeat }
+</PRE>
+<H3>Background-Attachment</H3>
+<P>Таковое вот длинное название для определения своства прокрутки фонового 
+изображения. Оно может быть фиксированным (fixed) или двигаться вместе с 
+документом (scroll). <PRE>body {background-image: url("img/sexy/girl/foto.png"); background-repeat: no-repeat; 
+	background-attachment: scroll }
+</PRE>
+<H3>Baackground-Position</H3>
+<P>Определяет за место начального заполнения или просто расположение фонового 
+изображения. Может задаваться весьма разнообразно. Просто приведу примеры 
+<UL>
+  <LI>top left = left top = 0% 0% 
+  <LI>top = top center = center top = 50% 0% 
+  <LI>right top = top right = 100% 0% 
+  <LI>left = left center = center left = 0% 50% 
+  <LI>center = center center = 50% 50% 
+  <LI>right = right center = center right = 100% 50% 
+  <LI>bottom left = left bottom = 0% 100% 
+  <LI>bottom = bottom center = center bottom = 50% 100% 
+  <LI>bottom right = right bottom = 100% 100% </LI></UL>
+<P>Это способ задания положения ключевыми словами или процентыми отступами 
+(вначале отступ по X, затем по Y). В одной строке указаны альтернативные 
+варианты указания расположения. Помимо этого, можно использовать отступы в 
+единицах (пикселях, ёкселях и иже с ними): 
+<UL>
+  <LI>5px 10px 
+  <LI>10em 2em 
+  <LI>20ex 3px 
+  <LI>15cm 15cm </LI></UL>
+<P>Выбирайте любой вариант по вкусу. <PRE>body {background-image: url("img/sexy/girl/foto.png"); background-position: 5ex 10em }
+</PRE>
+<H3>Background</H3>
+<P>Ну и под конец, "всеобъемлющее" свойство <B>background</B>. В нем можно 
+указать все вышеприведенное, только соблюдая правильный порядок: 
+<P><TT><B>background: background-color | background-image | background-repeat | 
+background-attachment | background-position </B></TT>
+<P>Например, фон для страницы может выглядеть так: <PRE>body { background: black url("tile.gif") repeat }
+</PRE>
+<P>...или так <PRE>body { background: #A0A0A0 url("stones.png") repeat-x top right }
+</PRE>
+<P>...или даже так: <PRE>body { background: white}
+</PRE></DIV>
+<CENTER>
+<HR>
+<A href="http://firststeps.ru/html/css/r.php?4">Предыдущий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/r.php?6">Следующий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/css1.html">Оглавление</A><BR>Автор <A 
+href="mailto:seavan@yandex.ru?SUBJECT=From_part_css#5'_on_[www.firststeps.ru]">Аванесов 
+Самвел</A>.
+<HR>
+<IFRAME marginWidth=0 marginHeight=0 
+src="www_ПЕРВЫЕ ШАГИ_ru  Шаг 5 - Цвета и фон_files/erle.htm" frameBorder=0 
+width=468 scrolling=no 
+height=60><a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=9595&bt=1&pz=0&rnd=3260" target=_blank><img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=9595&bt=1&pz=0&rnd=3260" alt="-AdRiver-" border=0 width=468 height=60></a></IFRAME></CENTER><BR><BR></BODY></HTML>

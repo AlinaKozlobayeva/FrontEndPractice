@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="script/clock.js"></script>
+</head>
+<body onload="updateClock(); setInterval('updateClock()', 1000 )">
+<header>
+    <ul class="nav">
+        <li><a href="MainPage.html">Home</a></li>
+        <li>
+            <a href="Category.html">Categories</a>
+        </li>
+        <li><a href="map.html">Map</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="buttons.html">Push the button</a></li>
+        <li><a href="calc.html">Calc</a></li>
+        <li><a href="shop.html">Shop</a></li>
+    </ul>
+</header>
+
+<span id="clock">&nbsp;</span>
+
+
+<div class="calc_body">
+    <form name="board" id="board">
+        <input type="text" id="resultsbox" style="text-align:center;background:white;" disabled="disabled">
+    </form>
+    <table>
+        <div class="calc_buttons">
+            <tr>
+                <td><input type="button" value="7" onclick="board.resultsbox.value += '7'"></td>
+                <td><input type="button" value="8" onclick="board.resultsbox.value += '8'"></td>
+                <td><input type="button" value="9" onclick="board.resultsbox.value += '9'"></td>
+                <td rowspan="2"><input type="button" onclick="board.resultsbox.value += '+'" style="height: 60px;"
+                                       value="+"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="board.resultsbox.value += '4'"></td>
+                <td><input type="button" value="5" onclick="board.resultsbox.value += '5'"></td>
+                <td><input type="button" value="6" onclick="board.resultsbox.value += '6'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="board.resultsbox.value += '1'"></td>
+                <td><input type="button" value="2" onclick="board.resultsbox.value += '2'"></td>
+                <td><input type="button" value="3" onclick="board.resultsbox.value += '3'"></td>
+                <td rowspan="3">
+                    <input type="button" onclick="board.resultsbox.value = eval(board.resultsbox.value)"
+                           style="height: 80px;" value="=">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="board.resultsbox.value += '0'"></td>
+                <td><input type="button" value="." style="width: 100%" onclick="board.resultsbox.value += '.' "></td>
+                <td><input type="button" value="-" onclick="board.resultsbox.value += '-'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="C" onclick="board.resultsbox.value = ''"></td>
+                <td><input type="button" value="/" onclick="board.resultsbox.value += '/'"></td>
+                <td><input type="button" value="x" onclick="board.resultsbox.value += 'x'"></td>
+
+            </tr>
+        </div>
+    </table>
+    <div>
+        <textarea id="log">
+        </textarea>
+    </div>
+
+
+</div>
+
+<footer>
+    <div class="signature">
+        <p>Posted by: Alina Kozlobayeva</p>
+
+        <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+
+        <p>All rights received © .</p>
+    </div>
+</footer>
+
+
+</body>
+</html>

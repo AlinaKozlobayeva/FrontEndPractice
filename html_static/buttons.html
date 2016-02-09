@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head lang="en">
+    <meta http-equiv="Content-Type" content="text/css; charset=utf-8">
+    <title>Menu of the page</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="script/submit.js"></script>
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <ul class="nav">
+            <li><a href="MainPage.html">Home</a></li>
+            <li>
+                <a href="Category.html">Categories</a>
+            </li>
+            <li><a href="map.html">Map</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="buttons.html">Push the button</a></li>
+            <li><a href="calc.html">Calc</a></li>
+            <li><a href="shop.html">Shop</a></li>
+        </ul>
+    </header>
+
+
+    <form onsubmit="submitFunction()">
+        <div class="loginContainer">
+            Login:<br> <input id="login" type="text" name="fname">
+            Password:<br> <input id="pass" type="text" name="fpass">
+            <input type="submit" value="Log In">
+        </div>
+
+        <div class="textareaContainer">
+            <h1 class="h">Tell about yourself</h1>
+
+            <fieldset>
+                <legend>Personal information</legend>
+
+
+                <input type="radio" name="sex" value="Male">Male
+                <br>
+                <input type="radio" name="sex" value="Female">Female
+                <br>
+
+                <select name="Your favorite hero in book ">
+                    <option value="johnSnow">John Snow</option>
+                    <option value="dayneris">Dayneris</option>
+                    <option value="tyrion">Tyrion Lanister</option>
+                    <option value="jamie">Jamie Lanister</option>
+                    <option value="sersie">Sersei</option>
+                </select>
+                <br>
+                <input type="submit" value="confirm"/>
+
+        <textarea rows="2" cols="20" name="usrtxt" wrap="hard">
+        </textarea>
+                <input type="submit" title="Send" value="Send">
+            </fieldset>
+        </div>
+    </form>
+
+
+    <footer>
+        <div class="signature">
+            <p>Posted by: Alina Kozlobayeva</p>
+
+            <p>Contact information: <a href="mailto:someone@example.com">someone@example.com</a>.</p>
+
+            <p>All rights received © .</p>
+        </div>
+    </footer>
+
+</div>
+</body>
+</html>

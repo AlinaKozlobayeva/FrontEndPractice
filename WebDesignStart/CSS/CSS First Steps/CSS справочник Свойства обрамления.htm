@@ -1,0 +1,188 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0032)http://css.manual.ru/border.html -->
+<HTML><HEAD><TITLE>CSS справочник: Свойства обрамления</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="CSS справочник Свойства обрамления_files/main.php" type=text/css 
+rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY><!-- TOP LINE... -->
+<DIV class=topline><A href="http://css.manual.ru/"><IMG height=58 
+alt=css.manual.ru src="CSS справочник Свойства обрамления_files/logo.gif" 
+width=724 border=0></A> </DIV><!-- ...TOP LINE --><!-- MAIN MENU... -->
+<DIV class=leftsb><SPAN class=menu><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/index.html">Введение</A><BR><IMG height=15 alt=&nbsp; 
+hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/synt.html">Синтаксис CSS</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" 
+width=12><A href="http://css.manual.ru/inc.html">Включение стилей 
+в&nbsp;документ</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/val.html">Значения свойств</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" 
+width=12><A href="http://css.manual.ru/font.html">Свойства шрифта</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/text.html">Свойства текста</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" 
+width=12><A href="http://css.manual.ru/color.html">Свойства цвета 
+и&nbsp;фона</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/border.html">Свойства обрамления</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/pos.html">Свойства позиционирования</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/visual.html">Визуальные свойства</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/lists.html">Свойства списков</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" 
+width=12><A href="http://css.manual.ru/scroll.html">Свойства полос 
+прокрутки</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/span.html">Тег SPAN</A><BR><IMG height=15 alt=&nbsp; 
+hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" width=12><SPAN 
+class=menuitem>Статьи</SPAN><BR><IMG height=15 
+alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/cssideol.html">Идеология CSS</A><BR><IMG 
+height=15 alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/usecss.html">Как использовать 
+CSS</A><BR><IMG height=15 alt=&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b2.gif" width=22><A 
+href="http://css.manual.ru/articles/cssmenu.html">Меню с&nbsp;помощью 
+CSS</A><BR><IMG height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/alphabet.html">Алфавитный указатель</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/forum/index.php">Форум</A><BR><IMG height=15 
+alt=&nbsp; hspace=3 src="CSS справочник Свойства обрамления_files/b1.gif" 
+width=12><A href="http://css.manual.ru/apply.html">Обратная связь</A><BR><IMG 
+height=15 alt=&nbsp; hspace=3 
+src="CSS справочник Свойства обрамления_files/b1.gif" width=12><A 
+href="http://css.manual.ru/links.html">Ссылки</A><BR></SPAN></DIV><!-- ...MAIN MENU -->
+<DIV class=maincontent>
+<H3>Модель форматирования</H3>
+<P>Каждый элемент документа занимает прямоугольную область, которая помещена 
+последовательно еще в три области: подложка (<I>padding</I>), рамка 
+(<I>border</I>), поля (<I>margin</I>). Рисунок снизу иллюстрирует это модель. 
+</P>
+<CENTER><IMG height=243 alt="Иллюстрация модели форматирования CSS" 
+src="CSS справочник Свойства обрамления_files/border.gif" width=403 border=0> 
+</CENTER>
+<P>Свойство полей, подложки и рамки задается следующим образом </P>{CSS} 
+{Контейнер[-Сторона][-Свойство]: значение;} {/CSS} 
+<P>где контейнер это одно из слов <SPAN class=property>margin</SPAN>, <SPAN 
+class=property>padding</SPAN> или <SPAN class=property>border</SPAN>, сторона - 
+это <SPAN class=property>left</SPAN>, <SPAN class=property>right</SPAN>, <SPAN 
+class=property>top</SPAN> или <SPAN class=property>bottom</SPAN>, свойство - это 
+название определяемого свойства. Название сторон можно пропустить, если вы 
+хотите применить стилевое правило ко всем сторонам. Название свойства также 
+можно пропустить, если вы хотите использовать <A 
+href="http://css.manual.ru/val.php#shortdesc">краткое свойств</A>. Пример: <PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>td </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>border-left</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> solid 1px blue</SPAN><SPAN class=bracket>}</SPAN>
+<SPAN class=selector>table </SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>border-left</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> double 3px black</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE>После селектора <SPAN class=selector>Контейнер[-Сторона]</SPAN> вы можете 
+перечислить значение свойств рамки в произвольном порядке. 
+<P></P><A name=border-color></A>
+<H3>Свойство border-color</H3>
+<P>Это свойство задает цвет рамки. Оно может принимать от одного до четырех 
+значений. Если установлено только одно значение, то все четыре стороны рамки 
+будут одного цвета. Два значения приводят к тому, что верх и низ рамки 
+окрашиваются в первый цвет, а левая и правая стороны рамки - в другой. В случае 
+трех значений первое будет цветом верха рамки, второе цветом левой и правой 
+стороны, а третье задаст цвет низа. Четыре значения определяют цвет каждой из 
+сторон рамки в следующем порядке: верха, правой стороны, левой стороны, низа. 
+Также можно явно задавать цвет некоторой стороны рамки, пример:</P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>h1, h2, h3</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>border-left-color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> red</SPAN><SPAN class=bracket>;</SPAN><SPAN class=property> border-right-color</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> green</SPAN><SPAN class=bracket>;</SPAN><SPAN class=bracket>}</SPAN>
+ </SPAN>
+</PRE><A name=border-width></A>
+<H3>Свойство border-width</H3>
+<P>Свойство <SPAN class=property>border-width</SPAN> определяет толщину рамки. 
+Как и свойство <SPAN class=property>border-color</SPAN> может принимать от 
+одного до четырех значений в том же порядке. Для указания толщины могут 
+использоваться стандартные единицы длины или одно из ключевых слов: <SPAN 
+class=value>thin</SPAN> (тонкая), <SPAN class=value>medium</SPAN> (средняя), 
+<SPAN class=value>thik</SPAN> (тонкая). Можно также определить толщину 
+конкретной стороны, пример: </P><PRE class=code><SPAN class=csscontent>
+<SPAN class=selector>a</SPAN><SPAN class=bracket>{</SPAN><SPAN class=property>border-left</SPAN><SPAN class=bracket>:</SPAN><SPAN class=value> 2px</SPAN><SPAN class=bracket>}</SPAN>.
+ </SPAN>
+</PRE><A name=border-style></A>
+<H3>Свойство border-style</H3>
+<P>Это свойство используется для украшения рамки и может принимать одно из 
+следующих значений: <SPAN class=value>none</SPAN>, <SPAN 
+class=value>dotted</SPAN> (точечная), <SPAN class=value>dashed</SPAN> 
+(штриховая), <SPAN class=value>double</SPAN> (двойная), <SPAN 
+class=value>solid</SPAN> (сплошная), <SPAN class=value>groove</SPAN> (паз), 
+<SPAN class=value>outset</SPAN> (приподнятая), <SPAN class=value>inset</SPAN> 
+(утопленная), <SPAN class=value>ridge</SPAN> (ребро). Значение <SPAN 
+class=value>none</SPAN> применяется по умолчанию. Популярные броузеры некоректно 
+поддерживают это свойство, так что не увлекайтесь им. </P><A name=margin></A>
+<H3>Свойство margin</H3>
+<P>Этим свойством можно установить ширину полей. Можно задать ширину всех полей 
+сразу, присвоив свойству <SPAN class=property>margin</SPAN> значение, или 
+каждого поля по отдельности, задав значения свойствам <SPAN 
+class=property>margin-left</SPAN>, <SPAN class=property>margin-right</SPAN>, 
+<SPAN class=property>margin-top</SPAN>, <SPAN 
+class=property>margin-bottom</SPAN>. Это свойство может принимать значение <SPAN 
+class=value>auto</SPAN>, указывающее броузеру, что надо применить стандартное 
+значение ширины полей. </P><A name=padding></A>
+<H3>Свойство padding</H3>
+<P>Этим свойством можно установить ширину подложки. Можно задать ширину всех 
+подложек (верхней, нижней, правой и левой) сразу, присвоив свойству <SPAN 
+class=property>padding</SPAN> значение, или каждого поля по отдельности, задав 
+значения свойствам <SPAN class=property>padding-left</SPAN>, <SPAN 
+class=property>padding-right</SPAN>, <SPAN class=property>padding-top</SPAN>, 
+<SPAN class=property>padding-bottom</SPAN>. Это свойство может принимать 
+значение <SPAN class=value>auto</SPAN>, указывающее броузеру, что надо применить 
+стандартное значение ширины полей. </P><A name=height></A>
+<H3>Свойства height и width</H3>
+<P>Свойства <SPAN class=property>height</SPAN> и <SPAN 
+class=property>width</SPAN> определяют высоту и ширину элемента соответственно. 
+Значением этих свойств может быть длина, процентное значение или ключевое слово 
+<SPAN class=value>auto</SPAN>, которое подразумевает, что элемент обладал 
+изначально какой-то высотой/шириной и отображает его в соответствии с этим 
+значением. Эти два свойства применяются обычно к таблицам и изображениям. Однако 
+его можно применять ко всем элементам CSS. Вкупе со свойством <SPAN 
+class=property>Overflow</SPAN> (см. раздел <A 
+href="http://css.manual.ru/visual.php#overflow">визуальные свойства</A>) можно 
+достичь интересных эффектов. </P><A name=clear></A>
+<H3>Свойство clear</H3>
+<P>Это свойство очень похоже на атрибут clear тега <SPAN 
+class=tag>&lt;br&gt;</SPAN> (за описанием этого тега загляните в <A 
+href="http://html.manual.ru/book/html/body/textblocks/br.php">НTML 
+справочник</A>). Это свойство говорит броузеру, помещать ли содержимое тега 
+рядом с "плавающим" элементом или на первой строке перед ним. Значением свойства 
+<SPAN class=property>clear</SPAN> может быть <SPAN class=value>none</SPAN>, 
+<SPAN class=value>left</SPAN>, <SPAN class=value>right</SPAN> или <SPAN 
+class=value>both</SPAN>. Значение <SPAN class=value>none</SPAN> принято по 
+умолчанию и подразумевает, что броузер размещает содержимое тега рядом с 
+плавающими элементами по обе стороны, если там есть место. Значение <SPAN 
+class=value>left</SPAN> запрещает располагать содержимое слева от плавающего 
+элемента, <SPAN class=value>right</SPAN> - справа. <SPAN class=value>Both</SPAN> 
+не допускает размещение содержимого тега рядом плавающим элементом вообще. 
+</P><A name=float></A>
+<H3>Свойство float</H3>
+<P>Свойство <SPAN class=property>float</SPAN> описывает область отображения тега 
+в качестве плавающего элемента. Это свойство аналогично атрибуту align тегов 
+<SPAN class=tag>&lt;img&gt;</SPAN> и <SPAN class=tag>&lt;table&gt;</SPAN>, но 
+оно может применяться к любым HTML-элементам. </P>
+<P>Свойство <SPAN class=property>float</SPAN> принимает одно из трех значений: 
+<SPAN class=value>left</SPAN>, <SPAN class=value>right</SPAN>, <SPAN 
+class=value>none</SPAN>. Значение <SPAN class=value>none</SPAN> принято по 
+умолчанию, оно выключает свойство <SPAN class=property>float</SPAN>. Значения 
+<SPAN class=value>left</SPAN> и <SPAN class=value>right</SPAN> приказывают 
+броузеру поместить содержимое элемента слева и справа от потока соответственно и 
+позволить другому содержимому обтекать его. </P></DIV><!-- BOTTOM LINE... -->
+<DIV class=bottomline><IMG height=20 alt="" 
+src="CSS справочник Свойства обрамления_files/-.gif" 
+width=724><BR></TD></TR></DIV><!-- ...BOTTOM LINE -->
+<DIV class=copyright align=right><SMALL>© 2003-2004, <A 
+href="http://klimontovich.ru/">В. Климонтович</A>, Н. Пономарев (<A 
+href="http://css.manual.ru/apply.html">контакт</A>)<BR>При поддержке проекта <A 
+href="http://www.manual.ru/">MANUAL.RU</A> </SMALL></DIV></BODY></HTML>

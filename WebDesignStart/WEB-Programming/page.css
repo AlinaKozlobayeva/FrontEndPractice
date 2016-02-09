@@ -1,0 +1,87 @@
+P.welcome {
+    FONT-SIZE: 15px; MARGIN: 0em 1em 1em; COLOR: #9933cc; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-ALIGN: center
+}
+P.ips {
+    MARGIN-TOP: 0em; FONT-SIZE: 25px; MARGIN-LEFT: 0em; TEXT-TRANSFORM: uppercase; COLOR: #9933cc; MARGIN-RIGHT: 0em; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-ALIGN: left
+}
+P.right {
+    MARGIN-TOP: 1em; FONT-SIZE: 13px; MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em; FONT-FAMILY: Verdana, Arial, Helvetica; TEXT-ALIGN: right
+}
+H3 {
+    MARGIN-TOP: 0.5em; FONT-WEIGHT: bold; FONT-SIZE: 18px; MARGIN-LEFT: 2em; COLOR: #cc0000; MARGIN-RIGHT: 1.2em; FONT-FAMILY: Helvetica, Arial; TEXT-ALIGN: right
+}
+
+h4 {
+    margin-top: 1em; 
+    MARGIN-LEFT: 0em;
+    MARGIN-RIGHT: 1.2em;
+    margin-bottom: 0.5em;
+
+    FONT-WEIGHT: bold; 
+    FONT-SIZE: 95%; 
+    COLOR: #dea94c;  
+    FONT-FAMILY: Helvetica, Arial
+}
+
+TD.yell {
+    BACKGROUND-COLOR: #faf7ea
+}
+TD.fiol {
+    BACKGROUND-COLOR: #efecf9
+}
+TD.ssel {
+    BACKGROUND-COLOR: #ede2fb
+}
+TD.susel {
+    BACKGROUND-COLOR: #e2d3f5
+}
+span.date {
+        color: #336699; 
+        font-weight:bold;
+        background-color:#E8DCF7;
+}
+
+table.tree {
+   margin-left: 1em;
+   margin-bottom: 2.5em;
+   padding-left: 1em;
+   width:100%;
+}
+
+td.section {
+   background-color:#FDF7FE;
+}
+
+td.part {
+   background-color:#F5E2F9;
+}
+td.problem {
+   background-color:#FCF5F2;
+}
+
+table.form{
+  /*background-color:#FDF7FE;*/
+   border:1px solid  #E8DCF7;
+
+}
+
+/* statistic */
+table.stat{
+  border:1px solid #336699; 
+  font-size:12px;
+  text-align:center;
+  width:90%;
+}
+table.stat td{
+  border:1px solid #336699; 
+
+}
+
+table.stat th{
+  border:1px solid #336699; 
+  background-color:#E8DCF7;
+}
+
+tr.acc{
+  background-color:#D6F9BC;
+}

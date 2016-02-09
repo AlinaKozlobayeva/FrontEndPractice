@@ -1,0 +1,25 @@
+p.section{
+   FONT-SIZE: 13px; MARGIN-TOP: 1em; MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em; MARGIN-BOTTOM: 0em; FONT-FAMILY: Verdana, Arial, Helvetica;
+}
+p.comment{
+   FONT-SIZE: 12px; MARGIN-TOP: 0em; MARGIN-LEFT: 2em; MARGIN-RIGHT: 2em; COLOR: #336699; FONT-FAMILY: Times; FONT-STYLE:italic;
+}
+div.section{
+   MARGIN-LEFT:5em;
+}
+span.label{
+   COLOR: #336699; FONT-WEIGHT:bold;
+}
+
+A.soft:visited {
+	COLOR: #660099; 
+}
+A.soft:active {
+	COLOR: #660099; 
+}
+A.soft:link {
+	COLOR: #660099; 
+}
+A.soft:hover {
+	COLOR: #cc0000; 
+}

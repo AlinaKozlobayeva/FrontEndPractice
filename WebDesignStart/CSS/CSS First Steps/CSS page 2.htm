@@ -1,0 +1,180 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<head>
+<title>CSS справочник: Как использовать CSS</title>
+<link href="/css/main.php" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+<!-- TOP LINE... -->
+<div class="topline">
+<a href="http://css.manual.ru"><img src="/images/logo.gif" width="724" border="0" height="58" alt="css.manual.ru" vspace="0"></a>
+</div>
+<!-- ...TOP LINE -->
+
+<!-- MAIN MENU... -->
+<div class="leftsb">
+<span class="menu">
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/index.html">Введение</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/synt.html">Синтаксис CSS</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/inc.html">Включение стилей в&nbsp;документ</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/val.html">Значения свойств</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/font.html">Свойства шрифта</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/text.html">Свойства текста</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/color.html">Свойства цвета и&nbsp;фона</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/border.html">Свойства обрамления</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/pos.html">Свойства позиционирования</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/visual.html">Визуальные свойства</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/lists.html">Свойства списков</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/scroll.html">Свойства полос прокрутки</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/span.html">Тег SPAN</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><span class="menuitem">Статьи</span><br>
+<img src="/images/b2.gif" width="22" hspace="3" height="15" alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"><a href="/articles/cssideol.html">Идеология CSS</a><br>
+<img src="/images/b2.gif" width="22" hspace="3" height="15" alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"><a href="/articles/usecss.html">Как использовать CSS</a><br>
+<img src="/images/b2.gif" width="22" hspace="3" height="15" alt="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"><a href="/articles/cssmenu.html">Меню с&nbsp;помощью CSS</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/alphabet.html">Алфавитный указатель</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/forum/index.php">Форум</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/apply.html">Обратная связь</a><br>
+<img src="/images/b1.gif" width="12" hspace="3" height="15" alt="&nbsp;"><a href="/links.html">Ссылки</a><br>
+</span>
+</div>
+<!-- ...MAIN MENU -->
+<div class="maincontent">
+<h3>Как использовать CSS</h3>
+<p>
+Во-первых определитесь, необходимо ли использовать каскадные таблицы
+в ваших документах. Запомните главное: <b>никто никогда не вернется на вашу
+страницу, чтобы полюбоваться ее дизайном</b>. Но если вы решили использовать CSS,
+придерживайтесь следующих правил.
+</p>
+<heading:"Старайтесь максимально уменьшить размер таблиц стилей">
+<p>Если ваша страница занимает 5Кб а стилевой файл 4Кб, то размер стилевого файла надо уменьшить
+как минимум в 5 раз. Старайтесь, чтобы ваши стилевые файлы занимали не более 500-1000 байт.
+Иначе представьте такую ситуацию:
+некто нашел ваш сайт в поисковой системе yandex, нажал на ссылку и, после одной минуты ожидания(запомните, стили загружаются до
+HTML страницы), увидел перед собой страницу с оглавлением, состоящем из пяти пунктов. А теперь
+угадайте, останется ли он на вашей странице? Посетитель скорее уйдет с нее и попытается
+зайти на страницу с аналогичной тематикой(все через тоже yandex).</p>
+<h3>Используйте внешние таблицы стилей</h3>
+<p>Во-первых, используя внешние таблицы стилей, вы можете создать единый дизайн для
+всех документов вашей коллекции. Во-вторых, если перед вами
+встанет задача смены дизайна
+всех страниц вашего сайта, вы легко это сделаете, исправив основной стилевой файл.
+В-третьих, если броузер посетителя не поддерживает стили, то он не загрузит
+  стилевой файл, если же вы используете
+  стили, включенные по средствам тега
+  <span class="tag">&lt;style&gt;</span>, броузер все равно загрузит
+  содержимое этого тега, проигнорировав его.
+  Если вы хотите изменить стиль конкретного
+  документа, переопределив или доопределив
+  какие-то стили внешнего файла, используйте
+  стили, определенные с помощью тега <span class="tag">&lt;style&gt;</span>.
+  Старайтесь не использовать встроенных(стилей,
+  определенных с помощью атрибута style)
+  стилей вообще.</p>
+<h3>Старайтесь не использовать свойств позиционирования</h3>
+<p>Если вы с помощью стилей определили такие
+  свойства документа, как цвет, размер и
+  начертание шрифтов, цвет фона, фоновое
+  изображение, тип маркеров списка и т.д, то
+  броузер, не поддерживающий стили, выведет
+  вашу страницу в приемлемом виде. То есть
+  конечно шрифты, цвета, цвет фона(если вы не
+  определили значения этих свойств
+  средствами HTML, такими как атрибуты тегов
+  bgcolor и background) будут отображаться не так как
+  вы хотели, но все же страница будет вполне
+  читабельной. А теперь представьте себе
+  ситуация, когда вы использовали такие
+  свойства, как <span class="property">top, bottom, left, right, position</span> и т.д. для
+  расположения элементов в окне броузера.
+  Как на это отреагирует броузер, не
+  поддерживающий стили? Так что, когда вы
+  используете CSS, всегда думайте о том, как
+  будут поступать броузеры, игнорирующие
+  стили.</p>
+<h3>Избегайте абсолютных единиц длины</h3>
+<p>Представьте распространенную ситуацию:
+все содержимое страницы веб-мастер
+расположил в таблице - справа меню, слева
+текст. К тому же он назначил таблице ширину
+равную 650 пикселям. При разрешении экрана
+800x600 страница будет смотреться нормально.
+Но при разрешении 1024х768 окно броузера
+будет не целиком заполнено, что будет
+раздражать посетителей, а при разрешении
+640x480 пользователь будет вынужден
+использовать нижнюю полоску прокрутки для
+просмотра страницы. Запомните: ваши
+посетители будут использовать самые разные
+разрешения экранов, поэтому избегайте
+использования абсолютных единиц,
+используйте процентные. Эта рекомендация,
+разумеется, не относится к изображениям.
+</p>
+<h3>Комментарии: </h3><table align=center width="80%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-width: 1px 0px 1px 0px; border-color: #015857;border-style:solid;">Автор: <a href="mailto:">Yakness</a><br>
+         Время: 27.01.2005 19:34:47</td></tr><tr>
+         <td style="padding-left: 10px; padding-top: 12px">
+         
+Первыйнах!
+</td></tr></table><br>
+
+<table align=center width="80%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-width: 1px 0px 1px 0px; border-color: #015857;border-style:solid;">Автор: <a href="mailto:kex@nmail.ru">kex</a><br>
+         Время: 31.01.2005 15:11:18</td></tr><tr>
+         <td style="padding-left: 10px; padding-top: 12px">
+         
+secondhe...ad!)
+</td></tr></table><br>
+
+<table align=center width="80%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-width: 1px 0px 1px 0px; border-color: #015857;border-style:solid;">Автор: <a href="mailto:"></a><br>
+         Время: 02.02.2005 11:43:40</td></tr><tr>
+         <td style="padding-left: 10px; padding-top: 12px">
+         
+aaaa
+</td></tr></table><br>
+
+<table align=center width="80%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-width: 1px 0px 1px 0px; border-color: #015857;border-style:solid;">Автор: <a href="mailto:rubo@narod.ru">RuBo</a><br>
+         Время: 07.02.2005 00:54:26</td></tr><tr>
+         <td style="padding-left: 10px; padding-top: 12px">
+         
+>> А теперь представьте себе ситуация, когда вы использовали такие свойства, как top, bottom, left, right, position и т.д. для расположения элементов в окне броузера. Как на это отреагирует броузер, не поддерживающий стили? Так что, когда вы используете CSS, всегда думайте о том, как будут поступать броузеры, игнорирующие стили. <<<br />
+ Может просто забить на таких посетителей? Ведь таких браузеров которые не поддерживают CSS почти никто не пользует. А для тех кто всетаки пользуется таким старьем будет еще один повод обновить софтину.
+</td></tr></table><br>
+
+<table align=center width="80%" cellspacing="0" cellpadding="0" border="0"><tr><td style="border-width: 1px 0px 1px 0px; border-color: #015857;border-style:solid;">Автор: <a href="mailto:Lekux@mail.ru">Lekux</a><br>
+         Время: 07.02.2005 19:00:48</td></tr><tr>
+         <td style="padding-left: 10px; padding-top: 12px">
+         
+блин, скажи еще такие люди есть.<br />
+У меня пага без css представляет .... ничего не представляет =)<br />
+Чистый css ето круто........<br />
+<br />
+<br />
+<br />
+
+</td></tr></table><br>
+
+ <h3>Добавить комментарий</h3>
+      <form action="/articles/usecss.html" method="post"><input type="hidden" name="art_name" value="articles-usecss">
+      <table align=center width="80%" cellspacing="5" cellpadding="0" border="0">
+      <tr><td align="right">Имя: </td><td align="left"><input type="text" name="name"  size="20"></td></tr>
+      <tr><td align="right">E-mail: </td><td align="left"><input type="text" name="email" size="20"></td></tr>
+      <tr><td align="right" valign="top">Сообщение: </td><td align="left"><textarea name="text" rows="12" cols="40"></textarea></td></tr>
+      <tr><td colspan="2" align="center"><input type="submit" value=" Отправить "></td></tr></table></form>
+</div>
+
+<!-- BOTTOM LINE... -->
+<div class="bottomline">
+<img src="/images/-.gif" width="724" height="20" alt=""><br></td></tr>
+</div>
+<!-- ...BOTTOM LINE -->
+
+<div align="right" class="copyright"><small>
+&copy; 2003-2004, <a href="http://klimontovich.ru">В. Климонтович</a>, Н. Пономарев  (<a href="/apply.html">контакт</a>)<br>
+При поддержке проекта <a href="http://www.manual.ru">MANUAL.RU</a>
+</small>
+</div>
+</body>
+</html>
+
+

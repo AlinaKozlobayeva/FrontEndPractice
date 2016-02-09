@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0037)http://firststeps.ru/html/css/r.php?2 -->
+<HTML><HEAD><TITLE>www.ПЕРВЫЕ ШАГИ.ru :: Шаг 2 - Подключение таблиц стилей</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1251"><LINK 
+href="www_ПЕРВЫЕ ШАГИ_ru  Шаг 2 - Подключение таблиц стилей_files/2.css" 
+type=text/css rel=stylesheet>
+<META content="MSHTML 6.00.2800.1106" name=GENERATOR></HEAD>
+<BODY text=black vLink=blue aLink=red link=blue bgColor=white>
+<H2>Шаг 2 - Подключение таблиц стилей</H2>
+<DIV style="MARGIN: 10px">
+<P>Подключение таблиц стилей можно выполнять разными способами. Наиболее 
+экономный с точки зрения расходования траффика - подключение внешней таблицы 
+(поскольку файлы CSS, как правило, кэшируются браузером). Достигается это 
+вставкой следующего тэга в заголовок (&lt;head&gt;&lt;/head&gt;) документа: <PRE>&lt;link rel=stylesheet type=text/css 
+	href='some/where/togo/tofind/myprecious/csstable.css'&gt;
+&lt;link rel=stylesheet type=text/css 
+	media="screen,print" href='thatswhatwe/use/for/theprinter.css'&gt;
+&lt;link rel=stylesheet type=text/css 
+	media="screen, aural" href='andthis/for/both/screenandspeech.css'&gt;
+</PRE>
+<P>В данном случае первый вариант задает таблицу стилей по умолчанию для всех 
+устройств вывода. Параметр <B>media</B>, используемый для этого тэга, позволяет 
+задавать предпочтительные таблицы для разных устройств (можно через запятую). 
+Список подтвержденных на данный момент стандартами устройств вывода: 
+<UL>
+  <LI><B>screen</B> - для отображения на компьютерных дисплеях (или всем, что 
+  себя самонадеянно к этому классу причисляет) 
+  <LI><B>print</B> - для вывода на печать 
+  <LI><B>tty</B> - для вывода на консольные терминалы 
+  <LI><B>aural</B> - на устройства звукосинтеза 
+  <LI><B>projection</B> - на проекционные установки 
+  <LI><B>braille</B> - на тактильные устройства Брайля 
+  <LI><B>tv</B> - на экраны телевизоров 
+  <LI><B>all</B> - на все устройства </LI></UL>
+<P>Другой вариант - описание таблицы прямо внутри документа HTML. Выглядит это 
+так: <PRE>&lt;html&gt;
+&lt;head&gt;
+&lt;style&gt;
+body {font-family: Verdana; color: black }
+p {margin-left: 1.5em }
+&lt;/style&gt;
+&lt;body&gt;
+&lt;p&gt;Параграф, выведенный шрифтом Вердана, с отступом 1.5em, и черного цвета.
+&lt;/body&gt;
+&lt;/html&gt;
+</PRE>
+<P>Также таблицы можно импортировать методом, сходим с препроцессорным 
+<B>#include</B>. Директива вставляется в сам файл таблицы и выглядит так: <PRE>@import url(http://some.place.to/grab/a/good.css)
+@import url(http://another.place.to/grab/a/fine.css)
+body {backgound: yellow url(mybgpicture.png)}
+</PRE>
+<P>Эффект при этом будет такой же, как если бы последовательно в таблицу было 
+вставлено содержимое good.css, затем fine.css, а затем еще добавлено определение 
+для <B>body</B>. 
+<P>Ну и наконец, самой последний (вроде бы) вариант - описание стиля внутри 
+самого элемента. Вообще, смысл этого во многом сомнтителен, поскольку стиль 
+будет применен только к данному элементу, и, как следствие, утрачивается главное 
+преимущество CSS - единая логика оформления. Вместо <I>inline</I>описания лучше 
+использовать определитель по <B>id</B>. В любом случае всегда лучше иметь перед 
+собо все возможности. Описание стиля в таком случае выглядит так: <PRE>&lt;div style="font-family:fantasy; color: red; text-align:justify"&gt;
+&lt;h1 style="font-size: xx-large"&gt;
+</PRE></DIV>
+<CENTER>
+<HR>
+<A href="http://firststeps.ru/html/css/r.php?1">Предыдущий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/r.php?3">Следующий Шаг</A> | <A 
+href="http://firststeps.ru/html/css/css1.html">Оглавление</A><BR>Автор <A 
+href="mailto:seavan@yandex.ru?SUBJECT=From_part_css#2'_on_[www.firststeps.ru]">Аванесов 
+Самвел</A>.
+<HR>
+<IFRAME marginWidth=0 marginHeight=0 
+src="www_ПЕРВЫЕ ШАГИ_ru  Шаг 2 - Подключение таблиц стилей_files/erle.htm" 
+frameBorder=0 width=468 scrolling=no 
+height=60><a href="http://ad.adriver.ru/cgi-bin/click.cgi?sid=9595&bt=1&pz=0&rnd=18596" target=_blank><img src="http://ad.adriver.ru/cgi-bin/rle.cgi?sid=9595&bt=1&pz=0&rnd=18596" alt="-AdRiver-" border=0 width=468 height=60></a></IFRAME></CENTER><BR><BR></BODY></HTML>
